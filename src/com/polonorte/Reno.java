@@ -2,6 +2,7 @@ package com.polonorte;
 
 /**
  * Clase que representa un reno
+ * (más comentarios)
  * @author Diego
  *
  * @version 1.0
