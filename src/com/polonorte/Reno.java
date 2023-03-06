@@ -8,10 +8,22 @@ public class Reno {
 
     private int numCuernos;
     private int numCollares;
+    
+    private String apodo;
    
     //Esto es un comentario de prueba
     
-    public String volar(String direccion){
+    public String getApodo() {
+		return apodo;
+	}
+
+
+	public void setApodo(String apodo) {
+		this.apodo = apodo;
+	}
+
+
+	public String volar(String direccion){
         System.out.println("Reno.volar");
 
         return "mmmmmiiiiii chus chus peeeeerrrr";
