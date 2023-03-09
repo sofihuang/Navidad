@@ -27,6 +27,7 @@ public class Utils {
 	/**
 	 * Genera una fecha entre el 22 y 25 de diciembre del presente año, calculando el día de forma aleatoria
 	 * @return fecha entre el 22 y 25 de diciembre
+	 * @see java.util.Random
 	 * @since 1.0
 	 */
 	public static LocalDate generarDiaAleatorioDiciembre() {
