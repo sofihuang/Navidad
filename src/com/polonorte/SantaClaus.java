@@ -24,10 +24,10 @@ public class SantaClaus {
 		String saludo;
 		switch (caracter) {
 		case CARACTER_AMIGABLE: 
-			saludo = "hohoho, feliz navidad pequeños!";
+			saludo = "hohoho, ¡feliz navidad pequeños y adorables niños!";
 			break;
 		case CARACTER_CABREADO: 
-			saludo = "¿otra vez pidiendo juguetes? ¡Me tenéis harto!";
+			saludo = "¡todos los años pidiendo juguetes! ¡Me tenéis harto!";
 			break;
 		case CARACTER_FURIOSO: 
 			saludo = "ODIO LA NAVIDAAAAADD!! DEJAD DE ESCRIBIRME!";
