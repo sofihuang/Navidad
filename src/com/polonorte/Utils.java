@@ -17,6 +17,11 @@ public class Utils {
 	public static final String CARACTER_AMIGABLE = "AMIGABLE";
 	public static final String CARACTER_CABREADO = "CABREADO";
 	public static final String CARACTER_FURIOSO = "FURIOSO";
+	
+	public static final String VALOR_SI = "SI";
+	public static final String VALOR_NO = "NO";
+
+	
 	private static Random generador = new Random();
 
 	/**
@@ -53,6 +58,15 @@ public class Utils {
 		}
 
 		return caracter;
+	}
+	
+	/**
+	 * Transforma un valor booleano en cadena de carácter que representa "SI" o "NO".
+	 * @param valor Valor booleano de entrada
+	 * @return Valor de "SI" si el parámetro es true, "NO" en caso contrario
+	 */
+	public static String convertirBooleanASiNo(boolean valor) {
+		return valor ? VALOR_SI : VALOR_NO;
 	}
 
 }
