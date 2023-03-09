@@ -4,6 +4,13 @@ import java.time.LocalDate;
 import java.util.Random;
 
 //Esta clase contiene métodos útiles, es la version 1.2 y la creó Melchor
+/**
+ * Clase que contiene métodos útiles para el programa. 
+ * 
+ * @author Melchor
+ * @version 1.2
+ *
+ */
 public class Utils {
 
 	// Las constantes relacionadas con el caracter de SantaClaus o de un reno
@@ -12,14 +19,22 @@ public class Utils {
 	public static final String CARACTER_FURIOSO = "FURIOSO";
 	private static Random generador = new Random();
 
-	// Genera un elemento de fecha aleatorio en el mes de diciembre del presente año
-	// Presente desde la version 1.1
+	/**
+	 * Genera una fecha entre el 22 y 25 de diciembre del presente año, calculando el día de forma aleatoria
+	 * @return fecha entre el 22 y 25 de diciembre
+	 * @since 1.0
+	 */
 	public static LocalDate generarDiaAleatorioDiciembre() {
 		
 		int numEntre22Y25 = generador.nextInt(4)+22;
 		return LocalDate.of(LocalDate.now().getYear(), 12, numEntre22Y25);
 	}
 
+	/**
+	 * Genera un carácter aleatorio de entre los posibles, generando un número aleatorio y calculando el módulo 3.
+	 * Los valores que devuelve se corresponden con los de las constantes de esta clase.
+	 * @return Carácter generado. Dentro de los posibles: AMIGABLE, CABREADO y FURIOSO
+	 */
 	public static String generarCaracterAleatorio() {
 
 		
