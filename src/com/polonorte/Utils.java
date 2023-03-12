@@ -3,7 +3,6 @@ package com.polonorte;
 import java.time.LocalDate;
 import java.util.Random;
 
-//Esta clase contiene métodos útiles, es la version 1.2 y la creó Melchor
 /**
  * Clase que contiene métodos útiles para el programa. 
  * 

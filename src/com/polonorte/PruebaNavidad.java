@@ -2,6 +2,9 @@ package com.polonorte;
 
 import java.time.LocalDate;
 
+import com.polonorte.elfos.Diego;
+import com.polonorte.elfos.ElfoGenerico;
+
 public class PruebaNavidad {
 
 	public static void main(String[] args) throws DatosInvalidosException {
