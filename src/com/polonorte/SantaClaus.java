@@ -3,6 +3,16 @@ package com.polonorte;
 import java.time.LocalDate;
 import java.time.Month;
 
+/**
+ * Clase Santa Claus.
+ * Representa al padre de la navidad, Santa Claus.
+ * 
+ * 
+ * @author Baltasar
+ * @version 1.2
+ *
+ */
+
 //Esta clase describe a un santa claus y la creó Baltasar. Se considera que es la versión 1.2 del programa
 public class SantaClaus {
 
@@ -14,12 +24,23 @@ public class SantaClaus {
 
 	private String caracterActual;
 
+	   /**
+	    * Hace que Santa Claus deje de trabajar y cambia su carácter a amigable
+	    */
+	
 	public SantaClaus() {
 		this.trabajando = false;
 		this.caracterActual = Utils.CARACTER_AMIGABLE;
 	}
 
 	// (Este método se ha introducido desde la versión 1.1)
+	
+	   /**
+	    * Santa Claus saluda en base al carácter que tenga
+	    * @param carácter actual de Santa Claus
+	    * @return saludo String acorde a carácter
+	    * @since 1.1
+	    */
 	public String generarSaludoSegunCaracter(String caracter) {
 
 		String saludo;
@@ -43,6 +64,14 @@ public class SantaClaus {
 	// (Este método se ha introducido desde la versión 1.2)
 	// Incluir con javadoc que se lanza la DatosInvalidosException (mirar ->
 	// https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html#@exception)
+	
+	   /**
+	    * Comprueba la fecha para ver si Santa Claus trabaja
+	    * @since 1.2
+	    * @param fecha
+	    * @throws DatosInvalidosException si fecha null
+	    * @return true si mes Diciembre; false en caso contrario
+	    */
 	public boolean comprobarTrabajo(LocalDate fecha) throws DatosInvalidosException {
 
 		if (fecha == null) {
@@ -61,6 +90,12 @@ public class SantaClaus {
 	// Este metodo está desde la versión 0.5. se tiene que considerar obsoleto, y
 	// referenciar al metodo
 	// generarSaludoSegunCaracter
+	
+	   /**
+	    * Santa Claus saluda
+	    * @return el saludo típico de Santa Claus en String
+	    * @deprecated usar {@link #generarSaludoSegunCaracter(String)}
+	    */
 	public String saludar() {
 		return "hohoho";
 	}
