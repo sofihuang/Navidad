@@ -1,16 +1,18 @@
 package com.polonorte;
 
 /**
- * Clase Reno.
- * Representa un reno mágico de santa claus y sus atributos
+ * Class Reno.
+ * Representa un Reno y las acciones que hace
  * 
- * 
- * @author daniel
+ * @author sofia
  * @version 1.0
- *
+ * 
  */
 public class Reno {
 
+	/**
+	 * Constantes de un Reno
+	 */
     private String nombre;
     private int velocidad;
 
@@ -30,23 +32,19 @@ public class Reno {
 		this.apodo = apodo;
 	}
 
-/**
- * 
- * @param direccion La dirección en la que vuela el reno
- * @return El chillido que emite el reno al volar
- */
+	/**
+	 * Método que representa el vuelo de un Reno
+	 * @param direccion la direccion en la que un Reno vuela
+	 * @return una frase la frase del chillido que se produce el Reno en el vuelo
+	 * 
+	 */
 	public String volar(String direccion){
         System.out.println("Reno.volar");
 
         return "mmmmmiiiiii chus chus peeeeerrrr";
     }
 
-    /**
-     * Este método hacer correr al reno
-     * 
-     * @deprecated NO USAR MÁS, mejor usar el método {@link #volar(String)}
-     * @param direccion La dirección en la que correr
-     */
+  
     public void correr(String direccion){
         //TODO terminar
     }

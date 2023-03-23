@@ -4,30 +4,35 @@ import java.time.LocalDate;
 import java.time.Month;
 
 /**
- * Clase Santa Claus.
- * Representa al padre de la navidad, Santa Claus.
- * 
+ * Class SantaClaus.
+ * Representa saludo y el trabajo de Santa Claus
  * 
  * @author Baltasar
  * @version 1.2
- *
  */
 
-//Esta clase describe a un santa claus y la creó Baltasar. Se considera que es la versión 1.2 del programa
+//Esta clase describe a un santa claus y la creó Baltasar. 
+//Se considera que es la versión 1.2 del programa
 public class SantaClaus {
 
 	// Los kilos de peso de SantaClaus
+	/**
+	 * Los kilos de peso de SantaClaus
+	 */
 	private int kilosPeso;
 
 	// Si está trabajando ya o no
+	/**
+	 * Si está trabajando ya o no
+	 */
 	private boolean trabajando;
 
 	private String caracterActual;
 
-	   /**
-	    * Hace que Santa Claus deje de trabajar y cambia su carácter a amigable
-	    */
-	
+	/**
+	 * Método para ver el estado actual de SantaClaus: está trabajando y su caracter actual
+	 * @see Utils.java
+	 */
 	public SantaClaus() {
 		this.trabajando = false;
 		this.caracterActual = Utils.CARACTER_AMIGABLE;
@@ -35,12 +40,12 @@ public class SantaClaus {
 
 	// (Este método se ha introducido desde la versión 1.1)
 	
-	   /**
-	    * Santa Claus saluda en base al carácter que tenga
-	    * @param carácter actual de Santa Claus
-	    * @return saludo String acorde a carácter
-	    * @since 1.1
-	    */
+	/**
+	 * Método que representa caracter de un SantaClaus
+	 * @param caracter el caracter de Santa Claus que puede ser amigable,cabreado,furioso
+	 * @return saludo la frase que saluda el Santa Claus dependiendo de su caracter
+	 * @since 1.1
+	 */
 	public String generarSaludoSegunCaracter(String caracter) {
 
 		String saludo;
@@ -64,14 +69,14 @@ public class SantaClaus {
 	// (Este método se ha introducido desde la versión 1.2)
 	// Incluir con javadoc que se lanza la DatosInvalidosException (mirar ->
 	// https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html#@exception)
-	
-	   /**
-	    * Comprueba la fecha para ver si Santa Claus trabaja
-	    * @since 1.2
-	    * @param fecha
-	    * @throws DatosInvalidosException si fecha null
-	    * @return true si mes Diciembre; false en caso contrario
-	    */
+	/**
+	 * Método que comprueba que si está trabajando el Santa Claus
+	 * @param fecha la fecha del que quiere comprabar que si trabaja el Santa Claus
+	 * @return trabajando true significa que está trabajando , false que no está trabajando
+	 * @throw  DatosInvalidosException
+	 * @since 1.2
+	 */
+	  
 	public boolean comprobarTrabajo(LocalDate fecha) throws DatosInvalidosException {
 
 		if (fecha == null) {
@@ -90,12 +95,13 @@ public class SantaClaus {
 	// Este metodo está desde la versión 0.5. se tiene que considerar obsoleto, y
 	// referenciar al metodo
 	// generarSaludoSegunCaracter
-	
-	   /**
-	    * Santa Claus saluda
-	    * @return el saludo típico de Santa Claus en String
-	    * @deprecated usar {@link #generarSaludoSegunCaracter(String)}
-	    */
+	/**
+	 * 	Método que saluda el Santa Claus
+	 * @return frase la frase que se saluda el Santa Claus
+	 * @deprecated NO USA MÁS , MEJOR usa {@link #generarSaludoSegunCaracter(String caracter)}
+	 * @since 0.5
+	 */
+	   
 	public String saludar() {
 		return "hohoho";
 	}
