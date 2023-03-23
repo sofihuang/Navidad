@@ -44,7 +44,11 @@ public class Reno {
         return "mmmmmiiiiii chus chus peeeeerrrr";
     }
 
-  
+  /**
+   * Método que hace correr un Reno
+   * @param direccion la direccion que corre in Reno
+   * @deprecated NO USAR MÁS , MEJOR usar {@link #volar(String)}
+   */
     public void correr(String direccion){
         //TODO terminar
     }

@@ -73,7 +73,7 @@ public class SantaClaus {
 	 * Método que comprueba que si está trabajando el Santa Claus
 	 * @param fecha la fecha del que quiere comprabar que si trabaja el Santa Claus
 	 * @return trabajando true significa que está trabajando , false que no está trabajando
-	 * @throw  DatosInvalidosException
+	 * @throw  DatosInvalidosException si fecha es null
 	 * @since 1.2
 	 */
 	  
@@ -98,7 +98,7 @@ public class SantaClaus {
 	/**
 	 * 	Método que saluda el Santa Claus
 	 * @return frase la frase que se saluda el Santa Claus
-	 * @deprecated NO USA MÁS , MEJOR usa {@link #generarSaludoSegunCaracter(String caracter)}
+	 * @deprecated NO USA MÁS , MEJOR usa {@link #generarSaludoSegunCaracter(String)}
 	 * @since 0.5
 	 */
 	   
